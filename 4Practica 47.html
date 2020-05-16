@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<!--esta es mi practica 47-->
+
+<head>
+    <title>Practica 47</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <script>
+        var vector = [];
+        var number;
+        var sulti;
+        var f;
+        for (f = 0; f < 5; f++) {
+            number = 1 + (Math.random() * 1000);
+            vector.push(parseInt(number));
+        }
+        for (f = 0; f < vector.length; f++) {
+            document.write('Estos son los cinco valores ingresados:');
+            document.write('<br>');
+            document.write(vector[f]);
+            document.write('<br>');
+        }
+        sulti = vector.pop() + vector.pop();
+        document.write('<br>');
+        document.write('Esta es la suma de los ultimos componentes:');
+        document.write('<br>');
+        document.write(sulti);
+        document.write('<br>');
+        document.write('Este es el tamaño final del vector:');
+        document.write('<br>');
+        document.write(vector.length);
+        document.write('<br>');
+        document.write('Aqui estan los elementos restantes del vector:');
+        document.write('<br>');
+        for (f = 0; f < vector.length; f++) {
+            document.write(vector[f]);
+            document.write('<br>');
+
+        }
+    </script>
+
+</body>
+
+</html>
